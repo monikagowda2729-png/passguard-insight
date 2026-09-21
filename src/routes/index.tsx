@@ -19,6 +19,7 @@ import {
   TriangleAlert,
   X,
 } from "lucide-react";
+import type { ReactNode } from "react";
 import { useMemo, useState } from "react";
 
 import passguardShield from "@/assets/passguard-shield.png";
@@ -143,7 +144,7 @@ function Index() {
   return (
     <div className="min-h-dvh overflow-hidden bg-background text-foreground">
       <section className="cyber-grid relative isolate px-5 py-8 sm:px-8 lg:px-12">
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,var(--background),color-mix(in_oklab,var(--secondary)_58%,var(--background)),var(--background))]" />
+        <div className="page-depth absolute inset-0 -z-10" />
         <div className="absolute left-0 top-20 -z-10 h-px w-full bg-cyber/25" />
         <div className="absolute bottom-0 left-0 -z-10 h-px w-full bg-cyber/20" />
 
@@ -492,7 +493,7 @@ function StatusRow({ label, value }: { label: string; value: string }) {
   );
 }
 
-function InsightCard({ icon, title, text }: { icon: React.ReactNode; title: string; text: string }) {
+function InsightCard({ icon, title, text }: { icon: ReactNode; title: string; text: string }) {
   return (
     <article className="glass-panel rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:cyber-glow">
       <div className="grid size-12 place-items-center rounded-lg border border-cyber/45 bg-cyber-soft text-cyber">

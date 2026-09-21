@@ -221,6 +221,10 @@
   background: linear-gradient(90deg, var(--strength-color) var(--strength-progress), color-mix(in oklab, var(--muted) 72%, transparent) var(--strength-progress));
 }
 
+@utility page-depth {
+  background: linear-gradient(180deg, var(--background), color-mix(in oklab, var(--secondary) 58%, var(--background)), var(--background));
+}
+
 @utility scanline {
   position: relative;
   overflow: hidden;
