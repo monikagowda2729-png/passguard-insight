@@ -59,42 +59,76 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-cyber: var(--cyber);
+  --color-cyber-foreground: var(--cyber-foreground);
+  --color-cyber-soft: var(--cyber-soft);
+  --color-panel: var(--panel);
+  --color-panel-foreground: var(--panel-foreground);
+  --color-panel-border: var(--panel-border);
+  --color-console: var(--console);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --radius: 0.5rem;
+  --background: oklch(0.145 0.038 260.8);
+  --foreground: oklch(0.965 0.015 220.2);
+  --card: oklch(0.205 0.045 258.5 / 78%);
+  --card-foreground: oklch(0.965 0.015 220.2);
+  --popover: oklch(0.19 0.047 259.3);
+  --popover-foreground: oklch(0.965 0.015 220.2);
+  --primary: oklch(0.78 0.155 216.9);
+  --primary-foreground: oklch(0.12 0.035 256.8);
+  --secondary: oklch(0.25 0.055 258.6);
+  --secondary-foreground: oklch(0.93 0.018 223.1);
+  --muted: oklch(0.255 0.035 258.9);
+  --muted-foreground: oklch(0.735 0.04 232.9);
+  --accent: oklch(0.68 0.18 241.3);
+  --accent-foreground: oklch(0.97 0.011 218.6);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+  --destructive-foreground: oklch(0.98 0.012 32.7);
+  --border: oklch(0.46 0.08 224 / 35%);
+  --input: oklch(0.28 0.045 258.2 / 86%);
+  --ring: oklch(0.82 0.15 211.6);
+  --chart-1: oklch(0.78 0.155 216.9);
+  --chart-2: oklch(0.74 0.16 171.2);
+  --chart-3: oklch(0.79 0.17 86.4);
+  --chart-4: oklch(0.7 0.19 38.2);
+  --chart-5: oklch(0.64 0.21 26.9);
+  --sidebar: oklch(0.18 0.042 259.1);
+  --sidebar-foreground: oklch(0.965 0.015 220.2);
+  --sidebar-primary: oklch(0.78 0.155 216.9);
+  --sidebar-primary-foreground: oklch(0.12 0.035 256.8);
+  --sidebar-accent: oklch(0.25 0.055 258.6);
+  --sidebar-accent-foreground: oklch(0.93 0.018 223.1);
+  --sidebar-border: oklch(0.46 0.08 224 / 35%);
+  --sidebar-ring: oklch(0.82 0.15 211.6);
+  --cyber: oklch(0.82 0.15 211.6);
+  --cyber-foreground: oklch(0.09 0.025 257.2);
+  --cyber-soft: oklch(0.28 0.07 224.6 / 38%);
+  --panel: oklch(0.19 0.045 258.8 / 72%);
+  --panel-foreground: oklch(0.955 0.018 221.1);
+  --panel-border: oklch(0.76 0.13 217 / 28%);
+  --console: oklch(0.12 0.035 256.8 / 84%);
+  --success: oklch(0.79 0.16 171.2);
+  --success-foreground: oklch(0.09 0.025 176.2);
+  --warning: oklch(0.79 0.17 86.4);
+  --warning-foreground: oklch(0.12 0.04 75.2);
+  --danger: oklch(0.64 0.21 26.9);
+  --danger-foreground: oklch(0.985 0.01 30.3);
+  --font-display: "Sora", sans-serif;
+  --font-sans: "Manrope", sans-serif;
+  --gradient-cyber: linear-gradient(135deg, var(--cyber), var(--accent));
+  --gradient-panel: linear-gradient(145deg, color-mix(in oklab, var(--panel) 92%, transparent), color-mix(in oklab, var(--secondary) 62%, transparent));
+  --shadow-cyber: 0 0 46px color-mix(in oklab, var(--cyber) 22%, transparent);
+  --shadow-panel: 0 24px 80px color-mix(in oklab, black 36%, transparent);
 }
 
 .dark {
@@ -140,5 +174,60 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    min-height: 100dvh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: 0;
+  }
+}
+
+@utility cyber-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--cyber) 12%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--cyber) 12%, transparent) 1px, transparent 1px),
+    radial-gradient(circle at 18% 22%, color-mix(in oklab, var(--accent) 20%, transparent), transparent 28%),
+    radial-gradient(circle at 80% 6%, color-mix(in oklab, var(--cyber) 18%, transparent), transparent 24%);
+  background-size: 64px 64px, 64px 64px, auto, auto;
+}
+
+@utility glass-panel {
+  background: var(--gradient-panel);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow-panel), inset 0 1px 0 color-mix(in oklab, var(--foreground) 8%, transparent);
+  backdrop-filter: blur(22px) saturate(135%);
+}
+
+@utility cyber-glow {
+  box-shadow: var(--shadow-cyber), inset 0 0 0 1px color-mix(in oklab, var(--cyber) 14%, transparent);
+}
+
+@utility scanline {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent, color-mix(in oklab, var(--cyber) 11%, transparent), transparent);
+    transform: translateY(-100%);
+    animation: scanline 6s ease-in-out infinite;
+  }
+}
+
+@keyframes scanline {
+  0%, 18% {
+    transform: translateY(-100%);
+  }
+
+  55%, 100% {
+    transform: translateY(100%);
   }
 }
